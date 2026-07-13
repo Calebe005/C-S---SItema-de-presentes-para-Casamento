@@ -1,18 +1,25 @@
 @media (max-width:1200px) {
-    body,html{
-        overflow: hidden;
-        height: 100vh;
-        margin: 0px;
+    html,body{
+        height: 100vw;
     }
     #cabecalho{
         width: 100vw;
+        height: 30vw;
     }
+    #tituloCabecalho{
+        font-size: 15vw;
+    }
+    #secVes{font-size: 4vw;}
     #noiva{
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        right: 1px;
+        bottom:0px;
+        height: 100%;
+        object-fit: cover;
+
     }
     #areaPagamentoPix{
-        top: 20vh;
+        top: 15vh;
         height: 100vw;
         width: 90vw;
         left: 5vw;
@@ -69,7 +76,7 @@
     }
 
     #itensCarrinho{
-        bottom: 6vw;
+        bottom: 15vw;
         left: 10vw;
         width: 80vw;
         height: 60vw;
@@ -103,13 +110,43 @@
         text-align: center;
     }
     #agradecimento{
-        width: 100vw;
-        position: absolute;
+        width: 90vw;
         font-size: 5vw;
-        left: 1vw;
-        bottom: -10vw;
+        left: 5vw;
+        bottom: 0px;
         text-align: center;
         background-color: rgba(255, 255, 255, 0.334);
+        
     }
   
+}
+
+@media (min-width:390px) and (max-width: 1200px ) {
+    #areaPagamentoPix{
+        top: 35vw;
+        height: 80vw;
+        width: 80vw;
+        left: 10vw;
+    }
+    #itensCarrinho{
+        bottom: 5vw;
+        left: 20vw;
+        width: 60vw;
+        height: 50vw;
+
+        border-radius: 3vw;
+
+        padding: 5vw;
+    }
+    #itens{
+        font-size: 4vw;
+    }
+    .itemLista{
+        gap: 4vw;
+        margin-left: 10vw;
+    }
+    .itemLista p:first-child{
+        width: 25vw;
+        height: 4vw;
+    }
 }

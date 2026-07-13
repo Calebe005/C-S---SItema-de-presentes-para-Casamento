@@ -12,4 +12,4 @@ valores = valores.split(",")
 const valor = somaTotal(selecionado, valores,valorLivre);
 
 // Controller para pagamento via PIX:
-pgPix(valor);
+const reponse = await pgPix(valor);

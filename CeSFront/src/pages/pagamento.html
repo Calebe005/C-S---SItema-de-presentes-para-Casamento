@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/fontes.css">
-    <link rel="stylesheet" href="../styles/styles.ListaPresentes/style.ListaPresentes.css">
-    <link rel="stylesheet" href="../styles/styles.ListaPresentes/style.listaPresentes.phone.css">
+    
     <link rel="stylesheet" href="../styles/styles.pagamento/styles.pagamento.css">
     <link rel="stylesheet" href="../styles/styles.pagamento/styles.pagamentoPhone.css">
     <link rel="shortcut icon" href="../../assets/img/favicon (1).ico" type="image/x-icon">
@@ -26,37 +25,12 @@
         <section id="areaPagamentoPix">
             <div id="secBtn">
                 <button id="pgPix"></button>
-                <button id="pgCartao"></button>
+                
             </div>
-            <div id="qrcode"></div>
+            <img id="qrcode" src=""></img>
             <p>Escaneie o Qr Code acima</p>
         </section>
-        <section id="areaPagamentoCartao">
-            <div id="secBtn">
-                <button id="pgPix"></button>
-                <button id="pgCartao"></button>
-            </div>
-            <div id="secNumCart">
-                <label for="numerocart">Número do cartão</label>
-                <input type="number"name="numeroCart" id="numCartao">
-            </div>
-            <div id="secNome">
-                <label for="nome">Nome do Titular</label>
-                <input type="text" name="nome" id="nomeTitular">
-            </div>
-            <div id="secOutros">
-                <div id="secDtVenc">
-                    <label for="dtVenc">Data de vencimento</label>
-                    <input type="text" name="dtVenc" id="dtVenc" placeholder="00/00">
-                </div>
-                <div id="secCVV">
-                    <label for="cvv">CVV</label>
-                    <input type="number" name="cvv" id="cvv">
-                </div>
-            </div>
-            <button id="btnEnviar">Enviar</button>
-        </section>
-
+        
         <section id="itensCarrinho">
             <p id="tituloCarrinho">Itens Escolhidos</p>
                 <div id="itens"></div>

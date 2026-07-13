@@ -3,19 +3,68 @@
     padding: 0px;
     box-sizing: border-box;
 }
-body,
-html {
-  margin-bottom: 0px;
+
+html,body {
+
+  width: 100%;
+  height: 100vh;
   overflow: hidden;
+  background-color: #212240;
   
+}
+#cabecalho{
+    font-family: "Lavishly Yours", cursive;
+    background-color: #150F40;
+    padding: 0vw 3vw;
+    width: 100vw;
+    height: 10vw;
+    display: flex;
+
+    align-items: center;
+
+    position: fixed;
+
+    z-index: 999;
+}
+
+#linha{
+    width: 150vw;
+    height: 2px;
+    position: fixed;
+    z-index: 2;
+    top: 9vw;
+
+    background-color: white;
+}
+
+#tituloCabecalho{
+    font-weight: lighter;
+    color: white;
+
+    font-size: 7vw;
+
+    margin-right: auto;
+}
+#secVes{
+    color: rgba(255, 255, 255, 0.625);
+    font-family: "Italiana";
+    font-size: 2vw;
+}
+#versiculo{
+    right: 0px;
+    position: relative;
+}
+#versiculo1{
+    float: right;
 }
 #conteudoPrincipal {
   width: 100%;
   height: 100%;
 }
-#titulo1,#titulo2{
+#titulo1, #titulo2{
     color: white;
-    position: relative;
+    position: absolute;
+    
     top: 12vw;
 
     font-family: "Italiana", serif;
@@ -25,10 +74,13 @@ html {
 
 }
 #titulo1{
+    top: 12vw;
     font-size: 2vw;
 }
 #titulo2{
-    left: 9vw;
+    color: rgba(255, 255, 255, 0.579);
+    top: 14.5vw;
+    left: 7vw;
 }
 
 #areaPagamentoPix{
@@ -50,84 +102,26 @@ html {
     align-items: center;
     justify-content: space-between;
 }
-#areaPagamentoCartao{
-    width: 27vw;
-    height: 26vw;
+#areaPagamentoPix::after{
+    content: "Copiar chave PIX";
+    margin-top: 12vw;
+    margin-right: 16vw;
+    width: 40%;
+    height: 10%;
+    transform: rotateZ(-90deg);
+   
     position: absolute;
-    bottom: 2vw;
-    left: 4vw;
+    z-index: 3;
 
-    z-index: 2;
-    background-color: rgb(255, 255, 255);
-
-    border-radius: 1vw;
-    padding: 1vw;
-    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.491);
-
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-
-    font-family: "Italiana", serif;
-}
-#secNumCart, #secNome, #secOutros, #secDtVenc, #secCVV{
-    display: flex;
-    width: 100%;
-}
-#secNumCart, #secNome,#secDtVenc, #secCVV{
-    flex-direction: column;
-}
-
-#areaPagamentoCartao label{
-    padding-left: 0.5vw;
-}
-input, #btnEnviar{
-    height: 2.5vw;
-    border-radius: 1vw;
-    border: none;
-    background-color: #3d35742f;
-
-    padding: 1vw;
-    outline: none;
-    color: black;
-    font-size: 1vw;
-}
-input:hover{
-    background-color: #4542582f;
-}
-/* Chrome, Safari, Edge */
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-#secOutros input{
-    width: 60%;
-}
-#btnEnviar{
-    width: 80%;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    font-family: "Italiana", serif;
+    align-items: center;
+
+    font-family: "Hind", sans-serif;
+    font-weight: bolder;
     font-size: 1vw;
-
-    background-color: rgb(8, 66, 8);
-    color: white; 
+    background-color: rgba(255, 255, 255, 0.467);
+    display: flex;
 }
-
-#btnEnviar:hover{
-    background-color: rgb(6, 87, 6);
-    cursor: pointer;
-}
-
 
 #secBtn{
     width: 100%;
@@ -155,19 +149,19 @@ input[type=number] {
 
     border: none;
     border-radius: 1vw;
-    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.383)
-}
-#pgPix:hover, #pgCartao:hover{
-    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.175);
-    cursor: pointer;
+    
 }
 
 #qrcode{
     width: 60%;
     height: 70%;
-    background-color: rgb(220, 220, 220);
     margin-bottom: 1vw;
 }
+#qrcode:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
 #areaPagamentoPix > p{
     font-family: "Italiana";
     font-weight: bold;
@@ -178,9 +172,7 @@ input[type=number] {
 #noiva {
   width: 70%;
   height: 100%;
-
   right: 0vw;
-
   position: absolute;
   object-fit: cover;
   object-position: 14% 40%;
@@ -200,7 +192,7 @@ input[type=number] {
 
     border-radius: 1vw;
     padding: 1vw;
-    font-family: "Italiana", serif;
+    font-family: "Hind", serif;
     font-weight: lighter;
 
     display: flex;
@@ -240,7 +232,7 @@ input[type=number] {
     border-bottom: 1px solid rgb(148, 148, 148);
     border-top: 1px solid rgb(148, 148, 148);
 
-    overflow: scroll;
+    overflow-y: scroll;
 }
 .itemLista {
     margin-left: 1vw;
@@ -250,7 +242,7 @@ input[type=number] {
 .itemLista p:first-child{
     width: 10vw;
     height: 1vw;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 .itemLista p:first-child::-webkit-scrollbar{
     display: none;
