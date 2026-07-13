@@ -3,7 +3,7 @@ export default async function pgPix(valor){
     const presentes = document.querySelectorAll(".itemLista");
     let legendas = []
     presentes.forEach((e)=>{
-        legendas.push(e.querySelector("p"));
+        legendas.push(e.querySelector("p").textContent);
     })
 
     const reponse = await fetch("http://localhost:8080/pix/",{
