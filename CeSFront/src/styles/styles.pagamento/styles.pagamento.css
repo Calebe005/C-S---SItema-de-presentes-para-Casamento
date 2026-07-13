@@ -102,26 +102,7 @@ html,body {
     align-items: center;
     justify-content: space-between;
 }
-#areaPagamentoPix::after{
-    content: "Copiar chave PIX";
-    margin-top: 12vw;
-    margin-right: 16vw;
-    width: 40%;
-    height: 10%;
-    transform: rotateZ(-90deg);
-   
-    position: absolute;
-    z-index: 3;
 
-    justify-content: center;
-    align-items: center;
-
-    font-family: "Hind", sans-serif;
-    font-weight: bolder;
-    font-size: 1vw;
-    background-color: rgba(255, 255, 255, 0.467);
-    display: flex;
-}
 
 #secBtn{
     width: 100%;

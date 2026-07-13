@@ -1,0 +1,152 @@
+@media (max-width:1200px) {
+    html,body{
+        height: 100vw;
+    }
+    #cabecalho{
+        width: 100vw;
+        height: 30vw;
+    }
+    #tituloCabecalho{
+        font-size: 15vw;
+    }
+    #secVes{font-size: 4vw;}
+    #noiva{
+        width: 100%;
+        right: 1px;
+        bottom:0px;
+        height: 100%;
+        object-fit: cover;
+
+    }
+    #areaPagamentoPix{
+        top: 15vh;
+        height: 100vw;
+        width: 90vw;
+        left: 5vw;
+        padding: 5vw;
+        
+        border-radius: 5vw;
+        gap: 5vw;
+    }
+    #areaPagamentoCartao{
+        top: 20vh;
+        height: 100vw;
+        width: 90vw;
+        left: 5vw;
+        padding: 5vw;
+        
+        border-radius: 5vw;
+
+    }
+    input, #btnEnviar{
+        height: 10vw;
+        border-radius: 4vw;
+        font-size: 4vw;
+
+        padding: 3vw
+    }
+    #secOutros{
+        width: 100%;
+        justify-content: space-between;
+        
+    }
+    #secOutros label{
+        width: 100%;
+    }
+    #secDtVenc{
+        margin-right: 10vw;
+    }
+
+    #secBtn{
+        height: 15vw;
+    }
+    #pgPix, #pgCartao{
+        height: 12vw;
+        width: 20vw;
+    }
+
+    #qrcode{
+        height: 60%;
+    }
+    #areaPagamentoPix>p{
+        font-size: 4vw;
+    }
+    #areaPagamentoCartao label{
+        font-size: 3.5vw;
+    }
+
+    #itensCarrinho{
+        bottom: 15vw;
+        left: 10vw;
+        width: 80vw;
+        height: 60vw;
+
+        border-radius: 3vw;
+
+        padding: 5vw;
+    }
+    #tituloCarrinho{
+        font-size: 4vw;
+        padding: 0px;
+    }
+    #itens{
+        padding: 0px;
+        font-size: 4vw;
+    }
+    .itemLista{
+        gap: 10vw;
+        margin-left: 7vw;
+    }
+    .itemLista p:first-child{
+        width: 40vw;
+        height: 4vw;
+    }
+    .itemLista p:nth-child(2){
+        width: 20vw;     
+    }
+    #total{
+        font-size: 5vw;
+        bottom: 5vw;
+        text-align: center;
+    }
+    #agradecimento{
+        width: 90vw;
+        font-size: 5vw;
+        left: 5vw;
+        bottom: 0px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.334);
+        
+    }
+  
+}
+
+@media (min-width:390px) and (max-width: 1200px ) {
+    #areaPagamentoPix{
+        top: 35vw;
+        height: 80vw;
+        width: 80vw;
+        left: 10vw;
+    }
+    #itensCarrinho{
+        bottom: 5vw;
+        left: 20vw;
+        width: 60vw;
+        height: 50vw;
+
+        border-radius: 3vw;
+
+        padding: 5vw;
+    }
+    #itens{
+        font-size: 4vw;
+    }
+    .itemLista{
+        gap: 4vw;
+        margin-left: 10vw;
+    }
+    .itemLista p:first-child{
+        width: 25vw;
+        height: 4vw;
+    }
+}

@@ -6,7 +6,7 @@ export default async function pgPix(valor){
         legendas.push(e.querySelector("p").textContent);
     })
 
-    const reponse = await fetch("http://localhost:8080/pix/",{
+    const reponse = await fetch("https://c-s-sitema-de-presentes-para-casamento.onrender.com/pix",{
         method: "POST",
         headers:{
             "Content-Type":"application/json"
@@ -25,6 +25,6 @@ export default async function pgPix(valor){
    
     imgQr.addEventListener("click",()=>{
         navigator.clipboard.writeText(qrcode.qr_code)
-        alert("Chave Pix Copiada")
+        alert("Chave Pix Copiada");
     })
 }

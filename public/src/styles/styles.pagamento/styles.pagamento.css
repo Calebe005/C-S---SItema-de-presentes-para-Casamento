@@ -1,0 +1,248 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body {
+
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #212240;
+  
+}
+#cabecalho{
+    font-family: "Lavishly Yours", cursive;
+    background-color: #150F40;
+    padding: 0vw 3vw;
+    width: 100vw;
+    height: 10vw;
+    display: flex;
+
+    align-items: center;
+
+    position: fixed;
+
+    z-index: 999;
+}
+
+#linha{
+    width: 150vw;
+    height: 2px;
+    position: fixed;
+    z-index: 2;
+    top: 9vw;
+
+    background-color: white;
+}
+
+#tituloCabecalho{
+    font-weight: lighter;
+    color: white;
+
+    font-size: 7vw;
+
+    margin-right: auto;
+}
+#secVes{
+    color: rgba(255, 255, 255, 0.625);
+    font-family: "Italiana";
+    font-size: 2vw;
+}
+#versiculo{
+    right: 0px;
+    position: relative;
+}
+#versiculo1{
+    float: right;
+}
+#conteudoPrincipal {
+  width: 100%;
+  height: 100%;
+}
+#titulo1, #titulo2{
+    color: white;
+    position: absolute;
+    
+    top: 12vw;
+
+    font-family: "Italiana", serif;
+    font-weight: lighter;
+    left: 8vw;
+    width: auto;
+
+}
+#titulo1{
+    top: 12vw;
+    font-size: 2vw;
+}
+#titulo2{
+    color: rgba(255, 255, 255, 0.579);
+    top: 14.5vw;
+    left: 7vw;
+}
+
+#areaPagamentoPix{
+    width: 27vw;
+    height: 26vw;
+    position: absolute;
+    bottom: 2vw;
+    left: 4vw;
+
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 1vw;
+    padding: 1vw;
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.491);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#secBtn{
+    width: 100%;
+    height: 5vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+#pgPix{
+    background-image: url("../../../assets/img/pgpix.png");
+    background-size: cover;
+    background-position: center;
+}
+#pgCartao{
+    background-image: url("../../../assets/img/pgCartao.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#pgPix, #pgCartao{
+    width: 6vw;
+    height: 4vw;
+
+    border: none;
+    border-radius: 1vw;
+    
+}
+
+#qrcode{
+    width: 60%;
+    height: 70%;
+    margin-bottom: 1vw;
+}
+#qrcode:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+#areaPagamentoPix > p{
+    font-family: "Italiana";
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+
+#noiva {
+  width: 70%;
+  height: 100%;
+  right: 0vw;
+  position: absolute;
+  object-fit: cover;
+  object-position: 14% 40%;
+
+}
+
+#itensCarrinho{
+    position: absolute;
+    z-index: 1;
+    width: 20vw;
+    height: 23vw;
+
+    background-color: rgb(247, 247, 247);
+
+    left: 30vw;
+    bottom: 3.5vw;
+
+    border-radius: 1vw;
+    padding: 1vw;
+    font-family: "Hind", serif;
+    font-weight: lighter;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
+    
+    overflow: hidden;
+}
+
+#tituloCarrinho{
+    font-size: 2vw;
+}
+
+#total{
+    position: absolute;
+    left: 3vw;
+    bottom: 1vw;
+    
+    font-size: 1.5vw;
+    width: 100%;
+}
+
+#itens{
+    height: 60%;
+    width: 90%;
+    margin-left: 2vw;
+    gap: 1vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0vw 2vw;
+    align-items: center;
+
+    font-size: 1vw;
+
+    margin-bottom: 2vw;
+    border-bottom: 1px solid rgb(148, 148, 148);
+    border-top: 1px solid rgb(148, 148, 148);
+
+    overflow-y: scroll;
+}
+.itemLista {
+    margin-left: 1vw;
+    display: flex;
+    gap: 2vw;
+}
+.itemLista p:first-child{
+    width: 10vw;
+    height: 1vw;
+    overflow-y: scroll;
+}
+.itemLista p:first-child::-webkit-scrollbar{
+    display: none;
+}
+.itemLista p:nth-child(2){
+    width: 5vw;
+}
+#itens::-webkit-scrollbar{
+    display: none;
+}
+
+#agradecimento{
+    position: absolute;
+    bottom: 3vw;
+    right: 5vw;
+
+    font-family: "Italiana", serif;
+    font-size: 2.5vw;
+    font-weight: bolder;
+
+    color: white;
+}

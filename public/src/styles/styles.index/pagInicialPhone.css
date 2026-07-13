@@ -1,0 +1,51 @@
+@media (max-width:1200px) {
+    body{
+        background-size: 500%;
+        background-position: 50% 10%;
+
+        padding-top: 25vh;
+    }
+    #titulo{
+        font-size:25vw;
+        text-align: center;
+    }
+    #data{
+        font-size: 6vw;
+        left: 60vw;
+        top: -6vw;
+    }
+    #texto{
+    font-size: 3vw;
+    padding-top: -2vw;
+    text-align: center;
+    }
+    #nome{
+        margin: auto;
+        min-width: 80vw;
+        max-height: 16vh;
+        padding: 3vw;
+        top: -4vw;
+        left: 5vw;
+    }
+    #nome::placeholder{
+        font-size: 3vw;
+    }
+
+    #btnOk{
+        max-height: 8vh;
+        max-width: 15vw;
+        width: 50vw;
+
+        position: relative;
+        top: -2vw;
+        margin: auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 10vw;
+        font-size: 4vw;
+
+    }
+}

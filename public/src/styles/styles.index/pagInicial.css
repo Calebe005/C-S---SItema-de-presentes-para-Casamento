@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-image: url("../../../assets/img/BackgroundIncial.jpeg");
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: 60% 10%;
+
+    min-height: 100vh;
+    min-width: 100vw;
+
+    padding: 10% 5%;
+
+    overflow-x: hidden;
+    
+}
+#titulo{
+    font-family: "Lavishly Yours", cursive;
+    font-weight: lighter;
+    font-size: 10vw;
+    animation: flutuar 3s ease-in-out infinite;
+}
+#data{
+    font-family: "Lavishly Yours", cursive;
+    font-weight: lighter;
+    position: relative;
+    font-size: 1.5vw;
+    left: 20vw;
+    top: -3vw;
+
+    animation: flutuar 3s ease-in-out infinite;
+}
+#texto{
+    font-family: "Hind", sans-serif;
+    font-size: 1vw;
+    padding-top: -1vw;
+    padding-left: 3vw;
+}
+
+#titulo,#data, #texto{
+    color: white;
+}
+
+#nome{
+    min-width: 30vw;
+    max-height: 8vh;
+    padding: 1.2vw;
+    border: 1px solid white;
+    border-radius: 100em;
+
+    background-color: rgba(255, 255, 255, 0.399);
+
+    position: relative;
+    top: -2vw;
+
+    color: white;
+    font-weight: bold;
+    
+}
+#nome:focus{
+    border-color: rgb(63, 61, 61);
+    outline: none;
+}
+#nome::placeholder{
+    color: white;
+    font-size: 1vw;
+    font-family: "Hind", sans-serif;
+    font-weight: lighter;
+}
+#nome:hover{
+    background-color: rgba(240, 248, 255, 0.672);
+}
+
+#btnOk{
+    padding: 1vw;
+
+    max-width: 5vw;
+    width: 5vw;
+    border-radius: 1vw;
+
+    position: relative;
+    top: -2vw;
+    left: 1vw;
+
+    border: none;
+
+    font-family: "Hind", sans-serif;
+    font-size: 1vw;
+    font-weight: bold;
+
+    color: rgba(0, 0, 0, 0.589);
+}
+
+#btnOk:hover{
+    background-color: rgba(188, 188, 188, 0.716);
+    color: white;
+    cursor: pointer;
+}
+#btnOk:active{
+     background-color: rgb(255, 255, 255);
+     box-shadow: 0px 0px 5px 1px white;
+}
+
+

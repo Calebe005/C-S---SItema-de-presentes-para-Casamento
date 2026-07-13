@@ -1,0 +1,86 @@
+@media (max-width:900px) {
+    #cabecalho{
+        height: 30vw;
+        padding: 0vw 5vw;
+    }
+    #linha{
+        top: 25vw;
+        height: 5px;
+    }
+    #tituloCabecalho{
+        font-size: 16vw;
+    }
+    #secVes{
+        font-size: 3vw;
+    }
+
+
+    #containerItens{
+        grid-template-columns: repeat(2, minmax(20vw, 1fr));
+        row-gap: 6vw;
+        column-gap: 5vw;
+
+        top: 50vw;
+    }
+
+    #secEscolha{
+        top: 40vw;
+    }
+    #subTitulo1{
+        font-size: 5vw;
+    }
+    #subTitulo2{
+        font-size: 3vw;
+    }
+    .item{
+        width: 45vw;
+        height: 60vw;
+        padding: 3vw;
+        border-radius: 2vw;
+    }
+    .divImg{
+        border-radius: 2vw;
+    }
+    .item > p {
+        font-size: 3vw;
+    }
+    .item > input{
+        width: 20vw;
+        height: 6vw;
+
+        border-radius: 5vw;
+        font-size: 2vw;
+        padding: 2vw;
+    }
+    .btn{
+        width: 20vw;
+        height: 6vw;
+        border-radius: 5vw;
+        padding: 1vw;
+        font-size: 3vw;
+    }
+
+    #btnCarrinho{
+        width: 20vw;
+        height: 20vw;
+        
+        right: 5vw;
+        bottom: 6vw ;
+
+        border-radius: 100vw;
+    }
+    #btnCarrinho > img{
+        object-fit: cover;
+        height: 6vw;
+    }
+
+    #itemAdd{
+        width: 5vw;
+        height: 5vw;
+
+        right: 4vw;
+        bottom: 20vw;
+
+        display:none; /*! Ativar*/
+    }
+}
