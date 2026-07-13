@@ -1,3 +1,4 @@
+// @ts-ignore
 import {MercadoPagoConfig, Payment} from "mercadopago"
 
 export async function gerarPix(valor:number, descricao:string, email:string) {
