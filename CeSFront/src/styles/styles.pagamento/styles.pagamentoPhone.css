@@ -1,0 +1,115 @@
+@media (max-width:1200px) {
+    body,html{
+        overflow: hidden;
+        height: 100vh;
+        margin: 0px;
+    }
+    #cabecalho{
+        width: 100vw;
+    }
+    #noiva{
+        width: 100vw;
+        height: 100vh;
+    }
+    #areaPagamentoPix{
+        top: 20vh;
+        height: 100vw;
+        width: 90vw;
+        left: 5vw;
+        padding: 5vw;
+        
+        border-radius: 5vw;
+        gap: 5vw;
+    }
+    #areaPagamentoCartao{
+        top: 20vh;
+        height: 100vw;
+        width: 90vw;
+        left: 5vw;
+        padding: 5vw;
+        
+        border-radius: 5vw;
+
+    }
+    input, #btnEnviar{
+        height: 10vw;
+        border-radius: 4vw;
+        font-size: 4vw;
+
+        padding: 3vw
+    }
+    #secOutros{
+        width: 100%;
+        justify-content: space-between;
+        
+    }
+    #secOutros label{
+        width: 100%;
+    }
+    #secDtVenc{
+        margin-right: 10vw;
+    }
+
+    #secBtn{
+        height: 15vw;
+    }
+    #pgPix, #pgCartao{
+        height: 12vw;
+        width: 20vw;
+    }
+
+    #qrcode{
+        height: 60%;
+    }
+    #areaPagamentoPix>p{
+        font-size: 4vw;
+    }
+    #areaPagamentoCartao label{
+        font-size: 3.5vw;
+    }
+
+    #itensCarrinho{
+        bottom: 6vw;
+        left: 10vw;
+        width: 80vw;
+        height: 60vw;
+
+        border-radius: 3vw;
+
+        padding: 5vw;
+    }
+    #tituloCarrinho{
+        font-size: 4vw;
+        padding: 0px;
+    }
+    #itens{
+        padding: 0px;
+        font-size: 4vw;
+    }
+    .itemLista{
+        gap: 10vw;
+        margin-left: 7vw;
+    }
+    .itemLista p:first-child{
+        width: 40vw;
+        height: 4vw;
+    }
+    .itemLista p:nth-child(2){
+        width: 20vw;     
+    }
+    #total{
+        font-size: 5vw;
+        bottom: 5vw;
+        text-align: center;
+    }
+    #agradecimento{
+        width: 100vw;
+        position: absolute;
+        font-size: 5vw;
+        left: 1vw;
+        bottom: -10vw;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.334);
+    }
+  
+}

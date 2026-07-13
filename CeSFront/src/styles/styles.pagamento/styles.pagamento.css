@@ -1,0 +1,275 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body,
+html {
+  margin-bottom: 0px;
+  overflow: hidden;
+  
+}
+#conteudoPrincipal {
+  width: 100%;
+  height: 100%;
+}
+#titulo1,#titulo2{
+    color: white;
+    position: relative;
+    top: 12vw;
+
+    font-family: "Italiana", serif;
+    font-weight: lighter;
+    left: 8vw;
+    width: auto;
+
+}
+#titulo1{
+    font-size: 2vw;
+}
+#titulo2{
+    left: 9vw;
+}
+
+#areaPagamentoPix{
+    width: 27vw;
+    height: 26vw;
+    position: absolute;
+    bottom: 2vw;
+    left: 4vw;
+
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 1vw;
+    padding: 1vw;
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.491);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#areaPagamentoCartao{
+    width: 27vw;
+    height: 26vw;
+    position: absolute;
+    bottom: 2vw;
+    left: 4vw;
+
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 1vw;
+    padding: 1vw;
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.491);
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: "Italiana", serif;
+}
+#secNumCart, #secNome, #secOutros, #secDtVenc, #secCVV{
+    display: flex;
+    width: 100%;
+}
+#secNumCart, #secNome,#secDtVenc, #secCVV{
+    flex-direction: column;
+}
+
+#areaPagamentoCartao label{
+    padding-left: 0.5vw;
+}
+input, #btnEnviar{
+    height: 2.5vw;
+    border-radius: 1vw;
+    border: none;
+    background-color: #3d35742f;
+
+    padding: 1vw;
+    outline: none;
+    color: black;
+    font-size: 1vw;
+}
+input:hover{
+    background-color: #4542582f;
+}
+/* Chrome, Safari, Edge */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#secOutros input{
+    width: 60%;
+}
+#btnEnviar{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Italiana", serif;
+    font-size: 1vw;
+
+    background-color: rgb(8, 66, 8);
+    color: white; 
+}
+
+#btnEnviar:hover{
+    background-color: rgb(6, 87, 6);
+    cursor: pointer;
+}
+
+
+#secBtn{
+    width: 100%;
+    height: 5vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+#pgPix{
+    background-image: url("../../../assets/img/pgpix.png");
+    background-size: cover;
+    background-position: center;
+}
+#pgCartao{
+    background-image: url("../../../assets/img/pgCartao.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#pgPix, #pgCartao{
+    width: 6vw;
+    height: 4vw;
+
+    border: none;
+    border-radius: 1vw;
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.383)
+}
+#pgPix:hover, #pgCartao:hover{
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.175);
+    cursor: pointer;
+}
+
+#qrcode{
+    width: 60%;
+    height: 70%;
+    background-color: rgb(220, 220, 220);
+    margin-bottom: 1vw;
+}
+#areaPagamentoPix > p{
+    font-family: "Italiana";
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+
+#noiva {
+  width: 70%;
+  height: 100%;
+
+  right: 0vw;
+
+  position: absolute;
+  object-fit: cover;
+  object-position: 14% 40%;
+
+}
+
+#itensCarrinho{
+    position: absolute;
+    z-index: 1;
+    width: 20vw;
+    height: 23vw;
+
+    background-color: rgb(247, 247, 247);
+
+    left: 30vw;
+    bottom: 3.5vw;
+
+    border-radius: 1vw;
+    padding: 1vw;
+    font-family: "Italiana", serif;
+    font-weight: lighter;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
+    
+    overflow: hidden;
+}
+
+#tituloCarrinho{
+    font-size: 2vw;
+}
+
+#total{
+    position: absolute;
+    left: 3vw;
+    bottom: 1vw;
+    
+    font-size: 1.5vw;
+    width: 100%;
+}
+
+#itens{
+    height: 60%;
+    width: 90%;
+    margin-left: 2vw;
+    gap: 1vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0vw 2vw;
+    align-items: center;
+
+    font-size: 1vw;
+
+    margin-bottom: 2vw;
+    border-bottom: 1px solid rgb(148, 148, 148);
+    border-top: 1px solid rgb(148, 148, 148);
+
+    overflow: scroll;
+}
+.itemLista {
+    margin-left: 1vw;
+    display: flex;
+    gap: 2vw;
+}
+.itemLista p:first-child{
+    width: 10vw;
+    height: 1vw;
+    overflow: scroll;
+}
+.itemLista p:first-child::-webkit-scrollbar{
+    display: none;
+}
+.itemLista p:nth-child(2){
+    width: 5vw;
+}
+#itens::-webkit-scrollbar{
+    display: none;
+}
+
+#agradecimento{
+    position: absolute;
+    bottom: 3vw;
+    right: 5vw;
+
+    font-family: "Italiana", serif;
+    font-size: 2.5vw;
+    font-weight: bolder;
+
+    color: white;
+}

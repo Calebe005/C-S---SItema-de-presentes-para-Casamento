@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/fontes.css">
+    <link rel="stylesheet" href="../styles/styles.ListaPresentes/style.ListaPresentes.css">
+    <link rel="stylesheet" href="../styles/styles.ListaPresentes/style.listaPresentes.phone.css">
+    <link rel="stylesheet" href="../styles/styles.pagamento/styles.pagamento.css">
+    <link rel="stylesheet" href="../styles/styles.pagamento/styles.pagamentoPhone.css">
+    <link rel="shortcut icon" href="../../assets/img/favicon (1).ico" type="image/x-icon">
+    
+    <title>C&S - Pagamento</title>
+</head>
+<body>
+    <header id="cabecalho">
+        <h1 id="tituloCabecalho">C&S</h1>
+
+        <div id="secVes"><p id="versiculo">Até aqui nos ajudou o Senhor</p>
+        <p id="versiculo1">1 Samuel 7:12</p></div>
+    </header>
+    <main id="conteudoPrincipal">
+        <h1 id="titulo1">Área de pagamento</h1>
+        <p id="titulo2">Selecione o método que mais lhe agradar</p>
+
+        <section id="areaPagamentoPix">
+            <div id="secBtn">
+                <button id="pgPix"></button>
+                <button id="pgCartao"></button>
+            </div>
+            <div id="qrcode"></div>
+            <p>Escaneie o Qr Code acima</p>
+        </section>
+        <section id="areaPagamentoCartao">
+            <div id="secBtn">
+                <button id="pgPix"></button>
+                <button id="pgCartao"></button>
+            </div>
+            <div id="secNumCart">
+                <label for="numerocart">Número do cartão</label>
+                <input type="number"name="numeroCart" id="numCartao">
+            </div>
+            <div id="secNome">
+                <label for="nome">Nome do Titular</label>
+                <input type="text" name="nome" id="nomeTitular">
+            </div>
+            <div id="secOutros">
+                <div id="secDtVenc">
+                    <label for="dtVenc">Data de vencimento</label>
+                    <input type="text" name="dtVenc" id="dtVenc" placeholder="00/00">
+                </div>
+                <div id="secCVV">
+                    <label for="cvv">CVV</label>
+                    <input type="number" name="cvv" id="cvv">
+                </div>
+            </div>
+            <button id="btnEnviar">Enviar</button>
+        </section>
+
+        <section id="itensCarrinho">
+            <p id="tituloCarrinho">Itens Escolhidos</p>
+                <div id="itens"></div>
+        </section>
+        <img src="../../assets/img/backPagamento.jpeg" alt="noiva" id="noiva">
+        <p id="agradecimento">Agradecemos desde já</p>
+    </main>
+    <script src="../script/script.pagamento.js" type="module"></script>
+</body>
+</html>
